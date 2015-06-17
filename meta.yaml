@@ -1,8 +1,9 @@
 {% set build = 0 %}
+{% set version = '1.8.5' %}
 
 package:
     name: openmpi
-    version: !!str 1.8.5rc3
+    version: {{version}}
 
 about:
     home: http://www.open-mpi.org/
@@ -10,9 +11,9 @@ about:
     summary: 'Open MPI: A high performance message passing library.'
 
 source:
-    fn: openmpi-1.8.5rc3.tar.gz
-    url: http://www.open-mpi.org/software/ompi/v1.8/downloads/openmpi-1.8.5rc3.tar.gz
-    md5: 2dfb5bf82eafb91b8d04e054dc5ef5d6
+    fn: openmpi-1.8.5.tar.gz
+    url: http://www.open-mpi.org/software/ompi/v1.8/downloads/openmpi-1.8.5.tar.gz
+    md5: 9c0878763c750dcb17f52701e26dc0f5
 
 requirements:
     conflicts:
@@ -21,4 +22,4 @@ requirements:
 
 build:
     number: {{build}}
-    string: ubuntu1404_cuda65_{{build}}
+    string: cuda_{{build}}
