@@ -1,5 +1,5 @@
 {% set build = 0 %}
-{% set version = '1.8.8' %}
+{% set version = '1.10.0' %}
 
 package:
     name: openmpi
@@ -11,9 +11,9 @@ about:
     summary: 'Open MPI: A high performance message passing library.'
 
 source:
-    fn: openmpi-{{version}}.tar.gz
-    url: http://www.open-mpi.org/software/ompi/v1.8/downloads/openmpi-{{version}}.tar.gz
-    md5: 88f2f6bf4a95df63a95d31cf31c20ebb
+    fn: openmpi-{{version}}.tar.bz2
+    url: http://www.open-mpi.org/software/ompi/v1.10/downloads/openmpi-{{version}}.tar.bz2
+    md5: 280cf952de68369cebaca886c5ce0304
 
 requirements:
     conflicts:
