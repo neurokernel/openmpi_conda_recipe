@@ -1,5 +1,5 @@
-{% set build = 2 %}
-{% set version = '1.10.0' %}
+{% set build = 0 %}
+{% set version = '1.10.1' %}
 
 package:
     name: openmpi
@@ -13,7 +13,7 @@ about:
 source:
     fn: openmpi-{{version}}.tar.bz2
     url: http://www.open-mpi.org/software/ompi/v1.10/downloads/openmpi-{{version}}.tar.bz2
-    md5: 280cf952de68369cebaca886c5ce0304
+    md5: f0fcd77ed345b7eafb431968124ba16e
 
 requirements:
     conflicts:
